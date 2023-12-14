@@ -1,15 +1,18 @@
-// On page load or when changing themes, best to add inline in `head` to avoid FOUC
-if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    document.documentElement.classList.add('dark')
-  } else {
-    document.documentElement.classList.remove('dark')
+  const darkModeToggle = document.getElementById('darkModeToggle');
+  const body = document.body;
+  const html = document.documentElement;
+
+  // Check if the user has a preference for dark mode
+  const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  // Set the initial mode based on user preference
+  if (prefersDarkMode) {
+    body.classList.add('dark');
+    html.classList.add('dark');
   }
-  
-  // Whenever the user explicitly chooses light mode
-  localStorage.theme = 'light'
-  
-  // Whenever the user explicitly chooses dark mode
-  localStorage.theme = 'dark'
-  
-  // Whenever the user explicitly chooses to respect the OS preference
-  localStorage.removeItem('theme')
+
+  // Toggle dark mode on button click
+  darkModeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark');
+    html.classList.toggle('dark');
+  });
