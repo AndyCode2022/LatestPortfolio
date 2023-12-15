@@ -3,12 +3,14 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrew Webster - Software Developer</title>
     <link rel="stylesheet" href="output.css" />
 </head>
+
 <body>
 
     <!-- Header Section -->
@@ -32,24 +34,12 @@
             </div>
         </nav>
         <!-- Inside the <header> element -->
-<button
-id="darkModeToggle"
-class="rounded-full p-2 text-gray-600 hover:text-gray-900 focus:outline-none focus:ring focus:border-indigo-300 transition"
->
-<svg
-  class="h-6 w-6"
-  fill="none"
-  viewBox="0 0 24 24"
-  stroke="currentColor"
->
-  <path
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    stroke-width="2"
-    d="M5 10H19M5 14H19M5 18H19"
-  />
-</svg>
-</button>
+        <button id="darkModeToggle"
+            class="rounded-full p-2 text-gray-600 hover:text-gray-900 focus:outline-none focus:ring focus:border-indigo-300 transition">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10H19M5 14H19M5 18H19" />
+            </svg>
+        </button>
 
     </header>
 
@@ -67,7 +57,9 @@ class="rounded-full p-2 text-gray-600 hover:text-gray-900 focus:outline-none foc
                 </p>
                 <!-- Add a "Get in Touch" or "View Portfolio" button -->
                 <div class="mt-10 flex items-center justify-center gap-x-6">
-                    <a href="#contact" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get in Touch</a>
+                    <a href="#contact"
+                        class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get
+                        in Touch</a>
                     <!-- Add more buttons or links as needed -->
                 </div>
             </div>
@@ -94,13 +86,38 @@ class="rounded-full p-2 text-gray-600 hover:text-gray-900 focus:outline-none foc
             <h2 class="text-2xl font-semibold text-gray-900 mb-8">Projects</h2>
             <!-- Add your projects here -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project Card Example -->
+                <!-- First project -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Project Title</h3>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Fitness App</h3>
                     <p class="text-gray-600">Brief description of the project.</p>
                     <!-- Add project details, links, etc. -->
                 </div>
-                <!-- Add more project cards as needed -->
+                <!-- Second project -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Youtube Channel Website</h3>
+                    <p class="text-gray-600">Brief description of the project.</p>
+                </div>
+                <!-- Third project -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Bike King Borders</h3>
+                    <p class="text-gray-600">Brief description of the project.</p>
+                </div>
+                <!-- Fourth project -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Theatre Website</h3>
+                    <p class="text-gray-600">Brief description of the project.</p>
+                </div>
+                <!-- Fifth project -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Sokoban</h3>
+                    <p class="text-gray-600">Brief description of the project.</p>
+                </div>
+                <!-- Sixth project -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Movie Heaven</h3>
+                    <p class="text-gray-600">Mobile application that allows a user to search for a movie and then
+                        save it to their collection.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -112,22 +129,24 @@ class="rounded-full p-2 text-gray-600 hover:text-gray-900 focus:outline-none foc
             <!-- Add a contact form or your contact information -->
             <!-- Example: -->
             <p class="text-gray-600 mb-4">Feel free to reach out to me!</p>
-            <form action="#" method="post">
+            <form action="/submitForm" method="post">
                 <!-- Add form fields (name, email, message) -->
-                <button type="submit" class="rounded-md bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Send Message</button>
+                <button type="submit"
+                    class="rounded-md bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Send
+                    Message</button>
             </form>
         </div>
     </section>
 
     <div class="bg-white dark:bg-gray-800">
-      <h1 class="text-gray-900 dark:text-white">Dark mode is here!</h1>
-      <p class="text-gray-600 dark:text-gray-300">
-        Lorem ipsum...
-      </p>
+        <h1 class="text-gray-900 dark:text-white">Dark mode is here!</h1>
+        <p class="text-gray-600 dark:text-gray-300">
+            Lorem ipsum...
+        </p>
     </div>
 
     <script src="main.js"></script>
 
 </body>
-</html>
 
+</html>
