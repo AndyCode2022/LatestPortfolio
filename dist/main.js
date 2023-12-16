@@ -19,13 +19,13 @@ darkModeToggle.addEventListener('click', () => {
   html.classList.toggle('dark');
 });
 
-// Submit button functionality
+// Submit button functionality for sending enquiry
 document.getElementById('submit-button').addEventListener('click', function () {
   // Gather form data
   let formData = new FormData(document.getElementById('contact-form'));
 
   // Make an AJAX request to your server-side script
-  fetch('/path/to/server/script', {
+  fetch('/submitForm', {
     method: 'POST',
     body: formData
   })
