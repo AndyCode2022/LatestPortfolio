@@ -18,7 +18,7 @@ app.post('/submitForm', (req, res) => {
   // Respond to the client
   res.send('Form submitted successfully!');
 });
-
+// Port listener to establish website is running on the port specified
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
