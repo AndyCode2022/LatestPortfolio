@@ -11,8 +11,7 @@ app.use(bodyParser.json());
 app.post('/submitForm', (req, res) => {
   const { name, email, message } = req.body;
 
-  // Process the form data, send an email, etc.
-  // For simplicity, let's just log the form data for now
+  // Process the form data, send an email
   console.log('Form data:', { name, email, message });
 
   // Respond to the client

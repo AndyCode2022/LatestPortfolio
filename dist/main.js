@@ -1,4 +1,3 @@
-
 // Dark mode
 const darkModeToggle = document.getElementById('darkModeToggle');
 const body = document.body;
