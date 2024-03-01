@@ -17,30 +17,14 @@
     <header class="bg-slate-100">
         <!-- Navigation -->
         <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-            <!-- Logo -->
-            <div class="flex lg:flex-1">
-                <a href="#" class="-m-1.5 p-1.5">
-                    <span class="sr-only">Andrew Webster</span>
-                    <!-- Replace the logo URL with your own logo -->
-                    <img class="h-8 w-auto" src="your-logo.png" alt="Your Logo">
-                </a>
-            </div>
             <!-- Navigation Links -->
-            <div class="hidden lg:flex lg:gap-x-12">
+            <div class="hidden lg:flex lg:gap-x-12 text-center">
                 <a href="#about" class="text-sm font-semibold leading-6 text-gray-900">About</a>
                 <a href="#skills" class="text-sm font-semibold leading-6 text-gray-900">Skills</a>
                 <a href="#projects" class="text-sm font-semibold leading-6 text-gray-900">Projects</a>
                 <a href="#contact" class="text-sm font-semibold leading-6 text-gray-900">Contact</a>
             </div>
         </nav>
-        <!-- Inside the <header> element -->
-        <button title="darkMode" id="darkModeToggle"
-            class="rounded-full p-2 text-gray-600 hover:text-gray-900 focus:outline-none focus:ring focus:border-indigo-300 transition">
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10H19M5 14H19M5 18H19" />
-            </svg>
-        </button>
-
     </header>
 
     <!-- Hero Section -->
@@ -67,12 +51,15 @@
     </div>
 
   <!-- Skills Section -->
-<div class="py-16 grid grid-cols-2 gap-4 place-content-start h-48 bg-cyan-400 text-white text-center">
+<div class="py-6 grid grid-cols-2 gap-4 place-content-start h-48 bg-cyan-400 text-white text-center">
     <div class="p-4 border-2 border-white rounded-lg">
-        <h2 class="text-2xl font-bold">JavaScript</h2>
+        <h2 class="text-2xl font-bold">Mongodb</h2>
     </div>
     <div class="p-4 border-2 border-white rounded-lg">
-        <h2 class="text-2xl font-bold">React.js</h2>
+        <h2 class="text-2xl font-bold">Express</h2>
+    </div>
+    <div class="p-4 border-2 border-white rounded-lg">
+        <h2 class="text-2xl font-bold">JavaScript</h2>
     </div>
     <div class="p-4 border-2 border-white rounded-lg">
         <h2 class="text-2xl font-bold">Node.js</h2>
@@ -91,6 +78,7 @@
                     <p class="text-gray-600">This project involved making a movie application designed for android.
                         The application allowed users to search for movies and save them to their collection.
                     </p>
+                    <a href=""></a>
                     <!-- Add project details, links, etc. -->
                 </div>
                 <!-- Second project -->
@@ -121,9 +109,10 @@
                 </div>
                 <!-- Sixth project -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-4"></h3>
-                    <p class="text-gray-600">Mobile application that allows a user to search for a movie and then
-                        save it to their collection.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">ShooterXgames</h3>
+                    <p class="text-gray-600">ShooterXgames is a game forum website that allows users to post and make comments on other user's posts.
+                        The website also has admin functionality.
+                    </p>
                 </div>
             </div>
         </div>
@@ -136,7 +125,7 @@
         <p class="text-gray-600 mb-4">Feel free to reach out to me!</p>
         
         <!-- Contact Form -->
-        <form id="contactForm" action="/submitForm" method="post">
+        <form action="/submitForm" method="post">
             <div class="mb-4">
                 <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
                 <input type="text" name="name" id="name" class="mt-1 p-2 w-full border rounded-md" required>
@@ -158,13 +147,6 @@
         </form>
     </div>
 </section>
-
-    <div class="bg-white dark:bg-gray-800">
-        <h1 class="text-gray-900 dark:text-white">Dark mode is here!</h1>
-        <p class="text-gray-600 dark:text-gray-300">
-            Lorem ipsum...
-        </p>
-    </div>
 
     <script src="main.js"></script>
 
